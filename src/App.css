@@ -11,10 +11,38 @@ a {
 body {
   font-family: sans-serif;
   font-weight: 500;
+  background: url('./assets/background.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .container {
   width: 90%;
   margin:0 auto;
-  padding: 80px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
+
+img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px dodgerblue;
+}
+
+.project-btn {
+  color:cyan;
+  text-shadow: 0px 0px 10px  dodgerblue;
+  width: 45%;
+  text-align: center;
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  border: 2px solid white;
+  padding: 15px 20px;
+  border-radius: 30px;
+
+} 
