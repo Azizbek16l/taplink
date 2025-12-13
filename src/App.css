@@ -12,9 +12,10 @@ body {
   font-family: sans-serif;
   font-weight: 500;
   background: url('./assets/background.jpg');
-  height: 100vh;
+ 
   background-repeat: no-repeat;
   background-size:cover;
+  position: relative;
 }
 
 .container {
@@ -44,5 +45,52 @@ img {
   border: 2px solid white;
   padding: 15px 20px;
   border-radius: 30px;
-
+  transition: all 0.3s;
 } 
+.project-btn:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+.Modal-body {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 45%;
+  height: 250px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;  
+  transform: translateX(-50%);
+
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: #0000006e;
+  position: absolute;
+  top: 0;
+  left: 0;
+   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); 
+  cursor: pointer;
+}
+
+.share-btn {
+  
+     padding: 15px 40px; 
+     background: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    background: dodgerblue;
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+}
