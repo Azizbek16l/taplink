@@ -35,7 +35,7 @@ function Modal({setopen}){
   return(
     <div className='overlay' onClick={()=>(setopen(false))}>
       <div className='Modal-body'>
-     <button onClick={()=>(setopen(false))}>❌</button>
+     <button  className='modal-close-btn' onClick={()=>(setopen(false)) }>❌</button>
       <div className='Modal-container'>      
       </div>
       

@@ -94,3 +94,7 @@ img {
     font-size: 22px;
     cursor: pointer;
 }
+
+.modal-close-btn{
+  margin-left: 98%;
+}
