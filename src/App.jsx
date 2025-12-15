@@ -9,11 +9,11 @@ function App() {
       <div className='img-frame'>
         <img src={myimg}  width={150}  />
       </div>
-      <a href="#" className='project-btn'>Landing</a>
-      <a href="#" className='project-btn'>Online store</a>
-      <a href="#" className='project-btn'>API</a>
-      <a href="#" className='project-btn'>Landing</a>
-      <a href="#" className='project-btn'>Landing</a>
+      <a href="https://iridescent-crumble-341d2b.netlify.app/" className='project-btn' target='_blank'>Landing</a>
+      <a href="#" className='project-btn' target='_blank'>Online store</a>
+      <a href="#" className='project-btn' target='_blank'>API</a>
+      <a href="#" className='project-btn' target='_blank'>Landing</a>
+      <a href="#" className='project-btn' target='_blank'>Landing</a>
 
 
 
