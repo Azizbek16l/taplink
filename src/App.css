@@ -144,3 +144,20 @@ img {
   right: 15px;
   font-size: 18px;
 }
+
+
+
+.Modal-body {
+  animation: modalZoom 0.3s ease;
+}
+
+@keyframes modalZoom {
+  from {
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
