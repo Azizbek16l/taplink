@@ -34,7 +34,7 @@ import { QRCodeCanvas } from "qrcode.react";
 import { FaTelegramPlane, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 function Modal({ setopen }) {
-  const siteUrl = window.location.href; // 🔥 dynamic URL
+  const siteUrl = window.location.href; 
 
   return (
     <div className="overlay" onClick={() => setopen(false)}>
@@ -47,7 +47,7 @@ function Modal({ setopen }) {
         <div className="Modal-container">
           <h2>Share this site</h2>
 
-          {/* QR CODE */}
+         
           <div className="qr-box">
             <QRCodeCanvas
               value={siteUrl}
@@ -59,21 +59,21 @@ function Modal({ setopen }) {
            
           </div>
 
-          {/* CONTACT ICONS */}
+         
           <div className="contact-icons">
             <a
-              href="https://t.me/USERNAME"
+              href="https://t.me/Topilboyev"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaTelegramPlane />
             </a>
 
-            <a href="tel:+998901234567">
+            <a href="tel:+998942049107">
               <FaPhoneAlt />
             </a>
 
-            <a href="mailto:example@gmail.com">
+            <a href="mailto:azizbektopilboyev7@gmail.com">
               <FaEnvelope />
             </a>
           </div>
