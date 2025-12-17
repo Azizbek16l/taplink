@@ -30,17 +30,55 @@ function App() {
 
 
 export default App
+import { QRCodeCanvas } from "qrcode.react";
+import { FaTelegramPlane, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
-function Modal({setopen}){
-  return(
-    <div className='overlay' onClick={()=>(setopen(false))}>
-      <div className='Modal-body'>
-     <button  className='modal-close-btn' onClick={()=>(setopen(false)) }>❌</button>
-      <div className='Modal-container'>      
+function Modal({ setopen }) {
+  const siteUrl = window.location.href; // 🔥 dynamic URL
+
+  return (
+    <div className="overlay" onClick={() => setopen(false)}>
+      <div className="Modal-body" onClick={(e) => e.stopPropagation()}>
+        
+        <button className="modal-close-btn" onClick={() => setopen(false)}>
+          ❌
+        </button>
+
+        <div className="Modal-container">
+          <h2>Share this site</h2>
+
+          {/* QR CODE */}
+          <div className="qr-box">
+            <QRCodeCanvas
+              value={siteUrl}
+              size={160}
+              bgColor="#ffffff"
+              fgColor="#000000"
+              level="H"
+            />
+           
+          </div>
+
+          {/* CONTACT ICONS */}
+          <div className="contact-icons">
+            <a
+              href="https://t.me/USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTelegramPlane />
+            </a>
+
+            <a href="tel:+998901234567">
+              <FaPhoneAlt />
+            </a>
+
+            <a href="mailto:example@gmail.com">
+              <FaEnvelope />
+            </a>
+          </div>
+        </div>
       </div>
-      
-     
     </div>
-    </div>
-  )
+  );
 }

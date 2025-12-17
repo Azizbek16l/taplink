@@ -98,3 +98,49 @@ img {
 .modal-close-btn{
   margin-left: 98%;
 }
+
+.Modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Modal-container h2 {
+  color: #222;
+}
+
+.qr-box {
+  text-align: center;
+}
+
+.qr-box p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+  word-break: break-all;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.contact-icons a {
+  font-size: 30px;
+  color: dodgerblue;
+  transition: 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+}
