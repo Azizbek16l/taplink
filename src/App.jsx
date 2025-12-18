@@ -40,7 +40,13 @@ function Modal({ setopen }) {
   useEffect(() => {
     const originalOverflow = document.body.style.overflow;
 
-w
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, []);
+
   return (
     <div className="overlay" onClick={() => setopen(false)}>
       <div
